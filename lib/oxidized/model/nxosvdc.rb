@@ -196,7 +196,7 @@ class NXOSVDC < Oxidized::Model
   end
 
 # N7K-Admin, N5K
-  cmd 'show running-config vdc-all' do |cfg|
+  cmd 'show running-config' do |cfg|
     cfg = filter cfg
     cfg.gsub! /^(show run.*)$/, '! \1'
     cfg.gsub! /^!Time:[^\n]*\n/, ''
