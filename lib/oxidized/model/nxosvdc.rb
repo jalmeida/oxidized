@@ -1,4 +1,4 @@
-class NXOS_VDC < Oxidized::Model
+class NXOSVDC < Oxidized::Model
   prompt /^(\r?[\w.@_()-]+[#]\s?)$/
   comment '! '
 
