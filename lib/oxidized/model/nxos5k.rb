@@ -1,4 +1,4 @@
-class NXOS < Oxidized::Model
+class NXOS5K < Oxidized::Model
   prompt /^(\r?[\w.@_()-]+[#]\s?)$/
   comment '! '
 
