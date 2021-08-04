@@ -24,8 +24,8 @@ WORKDIR /tmp/oxidized
 RUN git fetch --unshallow || true
 RUN rake install
 
-# web interface
-RUN gem install oxidized-web --no-ri --no-rdoc
+# web interface + oxs script
+RUN gem install oxidized-web oxidized-script --no-ri --no-rdoc
 
 # clean up
 WORKDIR /
